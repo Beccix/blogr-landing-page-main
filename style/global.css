@@ -1,0 +1,160 @@
+:root {
+    --Light-red: hsl(356, 100%, 66%);
+    --Very-light-red: rgb(255, 122, 133);
+    --Very-dark-blue: hsl(208, 49%, 24%);
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+}
+
+html {
+    font-size: 100%
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.header-container {
+    height: 33.5rem;
+    border-radius: 0 0 0 10rem;
+    font-family: 'Overpass', sans-serif;
+    background: linear-gradient(90deg, var(--Very-light-red) 50%, var(--Light-red) 100%);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    padding-top: 3.6rem;
+    margin-bottom: 8.6rem;
+
+}
+
+.header-product {
+    color: var(--White);
+    font-weight: 600;
+    margin-left: 4rem;
+}
+
+.header-company {
+    color: var(--White);
+    font-weight: 600;
+    margin-left: 3rem;
+}
+
+.header-connect {
+    color: var(--White);
+    font-weight: 600;
+    margin: auto 27.8rem auto 3rem;
+}
+
+.header-product, .header-company, .header-connect {
+    cursor: pointer;
+}
+
+.header-product::after, .header-company::after, .header-connect::after {
+    content: url('/images/icon-arrow-light.svg');
+    margin-left: 1rem;
+}
+
+.product-box {
+    cursor: pointer;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10.5rem;
+    height: 9.1rem;
+    padding-left: 1.5rem;
+    border-radius: .5rem;;
+    position: absolute;
+    background-color: white;
+    transform: translateX(3rem) translateY(.5rem);
+}
+
+.header-div-list-1:hover, .header-div-list-2:hover, .header-div-list-3:hover, .header-div-list-3:hover {
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-register {
+    display: flex;
+    align-items: center;
+    width: 13.1rem;
+}
+
+.login-p {
+    color: var(--White);
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.signup-button {
+    color: var(--Light-red);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: .1rem solid white;
+    width: 8.5rem;
+    height: 3rem;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-header {
+    color: var(--White);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.p-header {
+    color: var(--White);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.startff-button {
+    width: 8.6rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Light-red);
+    margin-right: .5rem;
+    border: 0 solid;
+    border-radius: 2rem;
+}
+
+.learnmore-button {
+    width: 8.6rem;
+    height: 3rem;
+    font-weight: 600;
+    margin-left: .5rem;
+    color: white;
+    border: .1rem solid white;
+    border-radius: 2rem;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.main-container {
+    background-color: rgb(75, 16, 16);
+}
+
+.footer-container {
+    background-color: rebeccapurple;
+}
