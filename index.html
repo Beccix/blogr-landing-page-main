@@ -1,167 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style/global.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="/styles.css/global.css">
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-
 <body>
-  <header class="header-container">
-    <div class="header-top">
-      <img class="header-img" src="/images/logo.svg" alt="">
-      <div class="header-product-container">
-        <span class="header-span header-product btn-header">Product</span>
-        <img class="header-arrow" src="/images/icon-arrow-light.svg" alt="">
-        <div class="product-box hidden">
-          <div class="header-div-list-1">Overview</div>
-          <div class="header-div-list-1">Pricing</div>
-          <div class="header-div-list-1">Marketplace</div>
-          <div class="header-div-list-1">Features</div>
-          <div class="header-div-list-1">Integrations</div>
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <img src="/images/logo.svg" alt="logo">
+        <div class="nav-item">
+          <a href="#" class="item">Product</a>
+          <img class="arrow" src="/images/icon-arrow-light.svg" alt="Arrow down">
+          <div class="cards card-down1">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" class="item">Company</a>
+          <img class="arrow" src="/images/icon-arrow-light.svg" alt="Arrow down">
+          <div class="cards card-down2">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+        </div>
+        
+        <div class="nav-item">
+          <a href="#" class="item">Connect</a>
+          <img class="arrow" src="/images/icon-arrow-light.svg" alt="Arrow down">
+          <div class="cards card-down3">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>
+        </div>
+        <div class="buttons-registration">
+          <button class="buttons button-login">Login</button>
+          <button class="buttons button-singup">Sign Up</button>
+        </div>
+      </nav> 
+
+      <div class="text-container">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+
+        <div class="button-start-learn">
+          <button class="buttons button-start">Start for Free</button>
+          <button class="buttons button-learn">Learn More</button>
         </div>
       </div>
-
-      <div class="header-product-container">
-        <span class="header-span header-company">Company</span>
-        <img class="header-arrow" src="/images/icon-arrow-light.svg" alt="">
-        <div class="company-box hidden">
-          <div class="header-div-list-2">About</div>
-          <div class="header-div-list-2">Team</div>
-          <div class="header-div-list-2">Blog</div>
-          <div class="header-div-list-2">Careers</div>
-        </div>
-      </div>
-
-      <div id="fix" class="header-product-container">
-        <span class="header-span header-connect">Connect</span>
-        <img class="header-arrow" src="/images/icon-arrow-light.svg" alt="">
-        <div class="connect-box hidden">
-          <div class="header-div-list-3">Contact</div>
-          <div class="header-div-list-3">Newsletter</div>
-          <div class="header-div-list-3">LinkedIn</div>
-        </div>
-      </div>
-
-      <span class="header-register">
-        <p class="login-p">Login</p>
-        <button class="signup-button">Sign Up</button>
-      </span>
-    </div>
-
-    <div class="header-text">
-      <h1 class="h1-header">A modern publishing platform</h1>
-      <p class="p-header">Grow your audience and build your online brand</p>
-  
-      <span>
-        <button class="startff-button">Start for Free</button>
-        <button class="learnmore-button">Learn More</button>
-      </span>
-    </div>
     
-  </header>
+    </header>
+    
+  Designed for the future
 
-  <main class="main-container">
-    <h1 class="h1-main">Designed for the future</h1>
-    <div class="main-div">
-      <h2 class="h2-main">
-        Introducing an extensible editor
-      </h2>
-      <p class="p-main">
-        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
-        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
-        change the looks of a blog.
-      </p>
-      <h2 class="h2-main">
-        Robust content management
-      </h2>
-      <p class="p-main">
-        Flexible content management enables users to easily move through posts. Increase the usability of your blog
-        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-      </p>
-      <img class="img-main" src="/images/illustration-editor-desktop.svg" alt="">
-      <div class="main-bottom">
-        <img class="img-main-bottom" src="/images/illustration-phones.svg" alt="">
-        <h1 class="h1-main-bottom">
-          State of the Art Infrastructure
-        </h1>
-        <p class="p-main-bottom">
-          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-        </p>
-      </div>
-    </div>
-  </main>
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
 
-  <footer class="footer-container">
-    <img class="img-footer" src="/images/illustration-laptop-desktop.svg" alt="">
-    <h1 class="h1-footer">Free, open, simple</h1>
-    <p class="p-footer">
-      Blogr is a free and open source application backed by a large community of helpful developers. It supports
-      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-    </p>
-    <h1 class="h1-footer">
-      Powerful tooling
-    </h1>
-    <p class="p-footer">
-      ]Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-      but capable of producing even the most complicated sites.
-    </p>
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
 
-    <div class="footer-bottom">
-      <img class="img-footer-bottom" src="/images/logo.svg" alt="">
-      <div class="procuct-footer">
-        <h3 class="h3-footer">Product</h3>
-        <p class="p-footer-bottom">Overview</p>
-        <p class="p-footer-bottom">Pricing</p>
-        <p class="p-footer-bottom">Marketplace</p>
-        <p class="p-footer-bottom">Features</p>
-        <p class="p-footer-bottom">Integrations</p>
-      </div>
-      <div class="company-footer">
-        <h3 class="h3-footer">Company</h3>
-        <p class="p-footer-bottom">About</p>
-        <p class="p-footer-bottom">Team</p>
-        <p class="p-footer-bottom">Blog</p>
-        <p class="p-footer-bottom">Careers</p>
-      </div>
-      <div class="connect-footer">
-        <h3 class="h3-footer">Connect</h3>
-        <p class="p-footer-bottom">Contact</p>
-        <p class="p-footer-bottom">Newsletter</p>
-        <p class="p-footer-bottom">LinkedIn</p>
-      </div>
-    </div>
-  </footer>
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
 
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn
+
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-
-  <script src="/scripts/script.js"></script>
 </body>
-
 </html>

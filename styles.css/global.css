@@ -1,0 +1,110 @@
+:root {
+    --Light-red: hsl(353, 100%, 62%);
+    --Very-light-red: hsl(13, 100%, 72%);
+    --Very-dark-blue: hsl(208, 49%, 24%);
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    height: 37.5rem;
+    font-family: 'Overpass', sans-serif;
+    background: url('/images/bg-pattern-intro.svg'), linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%) ;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: 30% 50%; 
+}
+
+.navbar {
+    padding: 3rem 0 0 10rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.navbar > img {
+    margin-right: 3.5rem;
+}
+
+.nav-item {
+    margin-right: 1.8rem;
+}
+
+.item {
+    color: white;
+    font-weight: 600;
+}
+
+.arrow {
+    position: absolute;
+    margin-left:0.3rem;
+    transform: translateY(.5rem) translateX(.5rem);
+}
+
+.cards {
+    display: none;
+}
+
+.buttons {
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.buttons-registration {
+    width: 13.5rem;
+    margin-left: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-login {
+    color: white;
+    margin-right: 1rem;
+}
+
+.button-singup {
+    width: 8.6rem;
+    height: 3rem;
+    border-radius: 2rem;
+    color: var(--Light-red);
+    background-color: white;
+}
+
+.text-container {
+    color: white;
+}
+
+.text-container > h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.text-container > p {
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 37rem) {
+    body {
+        background-color: red;
+    }
+}
