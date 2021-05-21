@@ -32,7 +32,7 @@ header {
 }
 
 .navbar {
-    padding: 3rem 0 0 10rem;
+    padding: 3rem 0 0 8%;
     display: flex;
     align-items: center;
     margin-bottom: 8rem;
@@ -43,7 +43,7 @@ header {
 }
 
 .nav-item {
-    margin-right: 1.8rem;
+    margin-right: 3.8rem;
 }
 
 .item {
@@ -69,8 +69,9 @@ header {
 }
 
 .buttons-registration {
+    left: 73%;
     width: 13.5rem;
-    margin-left: 33%;
+    position: absolute;
     display: flex;
     justify-content: space-between;
 }
@@ -93,14 +94,39 @@ header {
 }
 
 .text-container > h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .text-container > p {
+    font-size: 1.5rem;
     margin-bottom: 2.5rem;
-    font-weight: 600;
+    font-weight: 300;
+}
+
+.button-start-learn {
+    display: flex;
+    justify-content: center;
+}
+
+.button-start {
+    width: 8.6rem;
+    height: 3rem;
+    margin-right: .5rem;
+    color: var(--Very-light-red);
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.button-learn {
+    margin-left: .5rem;
+    width: 8.6rem;
+    height: 3rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: .1rem solid white;
+    border-radius: 2rem;
 }
 
 @media (max-width: 37rem) {
