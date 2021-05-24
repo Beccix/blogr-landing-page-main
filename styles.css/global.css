@@ -57,19 +57,73 @@ header {
     transform: translateY(.5rem) translateX(.5rem);
 }
 
-.cards {
+
+
+.card-down1 {
+    width: clamp(95px ,8%, 20%);
+    top: 5.5rem;
+    left: clamp(200px, 17%, 300px);
+    height: 9rem;
     display: none;
+    padding: 1% 1% 1% 2%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: left;
+    border-radius: 1rem;
+}
+
+.card-down2 {
+    width: clamp(95px ,8%, 20%);
+    top: 5.5rem;
+    left: clamp(315px, 33%, 360px);
+    height: 8rem;
+    display: none;
+    padding: 1% 1% 1% 2%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: left;
+    border-radius: 1rem;
+}
+
+.card-down3 {
+    width: clamp(95px ,8%, 20%);
+    top: 5.5rem;
+    left: clamp(28rem, 37%, 31rem);
+    height: 6rem;
+    display: none;
+    padding: 1% 1% 1% 2%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    text-align: left;
+    border-radius: 1rem;
+}
+
+.card-items1, .card-items2, .card-items3 {
+    font-size: 100%;
+    margin-bottom: 5%;
+    color: black;
+}
+
+.card-items1:hover , .card-items2:hover , .card-items3:hover {
+    font-weight: bold;
 }
 
 .buttons {
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
     border: none;
     background-color: rgba(255, 0, 0, 0);
 }
 
 .buttons-registration {
-    left: 73%;
+    left: clamp(570px, 70%, 70%);
     width: 13.5rem;
     position: absolute;
     display: flex;
@@ -87,6 +141,11 @@ header {
     border-radius: 2rem;
     color: var(--Light-red);
     background-color: white;
+}
+
+.button-singup:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.322);
 }
 
 .text-container {
@@ -119,6 +178,11 @@ header {
     border-radius: 2rem;
 }
 
+.button-start:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
 .button-learn {
     margin-left: .5rem;
     width: 8.6rem;
@@ -129,7 +193,12 @@ header {
     border-radius: 2rem;
 }
 
-@media (max-width: 37rem) {
+.button-learn:hover {
+    color: var(--Very-light-red);
+    background-color: white;
+}
+
+@media (max-width: 52rem) {
     body {
         background-color: red;
     }
